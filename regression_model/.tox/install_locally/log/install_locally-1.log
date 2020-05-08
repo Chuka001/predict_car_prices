@@ -1,0 +1,63 @@
+action: install_locally, msg: getenv
+cwd: C:\Users\Nkechi Ijeoma\Downloads\chuka\curacel\regression_model
+cmd: 'C:\Users\Nkechi Ijeoma\Downloads\chuka\curacel\regression_model\.tox\install_locally\Scripts\pip.EXE' install -rrequirements.txt
+Collecting numpy<1.19.0,>=1.18.1
+  Using cached numpy-1.18.4-cp37-cp37m-win_amd64.whl (12.8 MB)
+Collecting pandas>=1.0.1
+  Using cached pandas-1.0.3-cp37-cp37m-win_amd64.whl (8.7 MB)
+Collecting scikit-learn<0.23.0,>=0.22.1
+  Using cached scikit_learn-0.22.2.post1-cp37-cp37m-win_amd64.whl (6.5 MB)
+Collecting joblib<0.15.0,>=0.14.1
+  Using cached joblib-0.14.1-py2.py3-none-any.whl (294 kB)
+Collecting pytest<6.0.0,>=5.3.2
+  Downloading pytest-5.4.2-py3-none-any.whl (247 kB)
+Requirement already satisfied: setuptools>=45.2.0 in c:\users\nkechi ijeoma\downloads\chuka\curacel\regression_model\.tox\install_locally\lib\site-packages (from -r requirements.txt (line 15)) (46.1.3)
+Requirement already satisfied: wheel>=0.34.2 in c:\users\nkechi ijeoma\downloads\chuka\curacel\regression_model\.tox\install_locally\lib\site-packages (from -r requirements.txt (line 16)) (0.34.2)
+Processing c:\users\nkechi ijeoma\appdata\local\pip\cache\wheels\aa\e7\e7\eb3c3d514c33294d77ddd5a856bdd58dc9c1fabbed59a02a2b\kaggle-1.5.6-py3-none-any.whl
+Collecting python-dateutil>=2.6.1
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting pytz>=2017.2
+  Using cached pytz-2020.1-py2.py3-none-any.whl (510 kB)
+Collecting scipy>=0.17.0
+  Using cached scipy-1.4.1-cp37-cp37m-win_amd64.whl (30.9 MB)
+Collecting py>=1.5.0
+  Using cached py-1.8.1-py2.py3-none-any.whl (83 kB)
+Collecting atomicwrites>=1.0; sys_platform == "win32"
+  Using cached atomicwrites-1.4.0-py2.py3-none-any.whl (6.8 kB)
+Collecting packaging
+  Using cached packaging-20.3-py2.py3-none-any.whl (37 kB)
+Collecting colorama; sys_platform == "win32"
+  Using cached colorama-0.4.3-py2.py3-none-any.whl (15 kB)
+Collecting attrs>=17.4.0
+  Using cached attrs-19.3.0-py2.py3-none-any.whl (39 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.1.9-py2.py3-none-any.whl (19 kB)
+Collecting more-itertools>=4.0.0
+  Using cached more_itertools-8.2.0-py3-none-any.whl (43 kB)
+Collecting importlib-metadata>=0.12; python_version < "3.8"
+  Using cached importlib_metadata-1.6.0-py2.py3-none-any.whl (30 kB)
+Collecting pluggy<1.0,>=0.12
+  Using cached pluggy-0.13.1-py2.py3-none-any.whl (18 kB)
+Collecting six>=1.10
+  Using cached six-1.14.0-py2.py3-none-any.whl (10 kB)
+Collecting requests
+  Using cached requests-2.23.0-py2.py3-none-any.whl (58 kB)
+Processing c:\users\nkechi ijeoma\appdata\local\pip\cache\wheels\7c\26\30\5f3d95da00fe94d0c4a5ec5b4ffd2e1ae18545f5fa61752e52\python_slugify-4.0.0-py2.py3-none-any.whl
+Collecting tqdm
+  Using cached tqdm-4.46.0-py2.py3-none-any.whl (63 kB)
+Collecting urllib3<1.25,>=1.21.1
+  Using cached urllib3-1.24.3-py2.py3-none-any.whl (118 kB)
+Collecting certifi
+  Using cached certifi-2020.4.5.1-py2.py3-none-any.whl (157 kB)
+Collecting pyparsing>=2.0.2
+  Using cached pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Collecting zipp>=0.5
+  Using cached zipp-3.1.0-py3-none-any.whl (4.9 kB)
+Collecting idna<3,>=2.5
+  Using cached idna-2.9-py2.py3-none-any.whl (58 kB)
+Collecting chardet<4,>=3.0.2
+  Using cached chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+Collecting text-unidecode>=1.3
+  Using cached text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+Installing collected packages: numpy, six, python-dateutil, pytz, pandas, joblib, scipy, scikit-learn, py, atomicwrites, pyparsing, packaging, colorama, attrs, wcwidth, more-itertools, zipp, importlib-metadata, pluggy, pytest, urllib3, idna, certifi, chardet, requests, text-unidecode, python-slugify, tqdm, kaggle
+Successfully installed atomicwrites-1.4.0 attrs-19.3.0 certifi-2020.4.5.1 chardet-3.0.4 colorama-0.4.3 idna-2.9 importlib-metadata-1.6.0 joblib-0.14.1 kaggle-1.5.6 more-itertools-8.2.0 numpy-1.18.4 packaging-20.3 pandas-1.0.3 pluggy-0.13.1 py-1.8.1 pyparsing-2.4.7 pytest-5.4.2 python-dateutil-2.8.1 python-slugify-4.0.0 pytz-2020.1 requests-2.23.0 scikit-learn-0.22.2.post1 scipy-1.4.1 six-1.14.0 text-unidecode-1.3 tqdm-4.46.0 urllib3-1.24.3 wcwidth-0.1.9 zipp-3.1.0

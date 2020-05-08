@@ -2,7 +2,7 @@ Metadata-Version: 2.1
 Name: regression-model
 Version: 1.0.0
 Summary: Used car prices Regression model for Curacel Assessment
-Home-page: https://github.com/chuka001/
+Home-page: https://github.com/chuka001/predict_car_prices
 Author: Ijeoma_Chukwuka
 Author-email: ijeoma.e.chukwuka@gmail.com
 License: BSD 3

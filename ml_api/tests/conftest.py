@@ -1,5 +1,9 @@
 import pytest
 
+import os,sys,inspect
+cdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+pdir = os.path.dirname(cdir)
+sys.path.insert(0, pdir)
 from api.app import create_app
 from api.config import TestingConfig
 
