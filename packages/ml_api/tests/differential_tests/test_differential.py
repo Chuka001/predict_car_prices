@@ -17,9 +17,9 @@ def test_model_prediction_differential(
     the current model with the previous model's results.
     """
     # Given
-    previous_model_df = pd.read_csv(f'{config.PACKAGE_ROOT}/{save_file}')
+    previous_model_df = pd.read_csv(f'{model_config.PACKAGE_ROOT}/{save_file}')
     previous_model_predictions = previous_model_df.predictions.values
-    test_data = load_dataset(file_name=model_configconfig.TESTING_DATA_FILE)
+    test_data = load_dataset(file_name=model_config.TESTING_DATA_FILE)
     multiple_test_input  = test_data[99:600]
 
     # When
