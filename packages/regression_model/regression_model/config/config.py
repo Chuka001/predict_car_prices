@@ -14,7 +14,7 @@ DATASET_DIR = PACKAGE_ROOT / "datasets"
 
 # data
 TESTING_DATA_FILE = "test.csv"
-TRAINING_DATA_FILE = "train.csv"
+TRAINING_DATA_FILE = "vehicles.csv"
 TARGET = "price"
 FEATURES = ['id', 'url', 'region', 'region_url', 'year', 'manufacturer', 'model',
        'condition', 'cylinders', 'fuel', 'odometer', 'title_status',
