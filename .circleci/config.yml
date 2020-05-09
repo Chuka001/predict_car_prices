@@ -105,7 +105,7 @@ jobs:
             pip install -r packages/ml_api/requirements.txt
             py.test -vv packages/ml_api/tests -m differential
 
-  deploy_to_heroku:
+  section_10_deploy_to_heroku:
     <<: *defaults
     steps:
       - checkout
@@ -131,7 +131,7 @@ workflows:
              branches:
                only:
                  - master
-    - deploy_to_heroku:
+    - section_10_deploy_to_heroku:
           requires:
             - train_and_upload_regression_model
           filters:
