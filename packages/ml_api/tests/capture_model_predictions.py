@@ -20,9 +20,9 @@ def capture_predictions(
     test_data = load_dataset(file_name='test.csv')
 
     # we take a slice with no input validation issues
-    multiple_test_json = test_data[:20]
+    multiple_test_input = test_data[:20]
 
-    predictions = make_prediction(input_data=multiple_test_json)
+    predictions = make_prediction(input_data=multiple_test_input)
 
     # save predictions for the test dataset
     predictions_df = pd.DataFrame(predictions)

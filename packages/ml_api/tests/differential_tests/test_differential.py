@@ -1,7 +1,6 @@
 import math
 
 import pytest
-
 from regression_model.config import config as model_config
 from regression_model.predict import make_prediction
 from regression_model.processing.data_management import load_dataset
@@ -17,10 +16,10 @@ def test_model_prediction_differential(
     the current model with the previous model's results.
     """
     # Given
-    previous_model_df = pd.read_csv(f'{model_config.PACKAGE_ROOT}/{save_file}')
+    previous_model_df = pd.read_csv(f'{config.PACKAGE_ROOT}/{save_file}')
     previous_model_predictions = previous_model_df.predictions.values
     test_data = load_dataset(file_name=model_config.TESTING_DATA_FILE)
-    multiple_test_input  = test_data[99:600]
+    multiple_test_input  = test_data[:20]
 
     # When
     response = make_prediction(input_data=multiple_test_input )
