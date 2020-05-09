@@ -18,15 +18,15 @@ def test_make_single_prediction():
     assert math.ceil(subject.get('predictions')[0]) >= 0
 
 
-def test_make_multiple_predictions():
-    # Given
-    test_data = load_dataset(file_name='test.csv')
-    original_data_length = len(test_data)
-    multiple_test_input = test_data
+# def test_make_multiple_predictions():
+#     # Given
+#     test_data = load_dataset(file_name='test.csv')
+#     original_data_length = len(test_data)
+#     multiple_test_input = test_data
 
-    # When
-    subject = make_prediction(input_data=multiple_test_input)
+#     # When
+#     subject = make_prediction(input_data=multiple_test_input)
 
-    # Then
-    assert subject is not None
-    assert len(subject.get('predictions')) == original_data_length 
+#     # Then
+#     assert subject is not None
+#     assert len(subject.get('predictions')) == original_data_length 
