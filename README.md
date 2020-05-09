@@ -1,0 +1,1 @@
+This is an automated service that constantly updates the prediction model with happenings in the marketplace (fresh data is fetched from kaggle -- check shell script), so that at every point in time, users can get semi accurate prediction of the prices of proposed cars.
