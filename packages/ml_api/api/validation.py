@@ -79,6 +79,5 @@ def validate_inputs(input_data):
     else:
         validated_input = input_data
     
-    print(validated_input)
 
     return validated_input, errors
