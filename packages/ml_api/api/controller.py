@@ -30,7 +30,6 @@ def version():
 def predict():
     if request.method == 'POST':
         # Step 1: Extract POST data from request body as JSON
-        print('abc')
         json_data = request.get_json()
         _logger.debug(f'Inputs: {json_data}')
 
