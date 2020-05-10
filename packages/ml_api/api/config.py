@@ -51,7 +51,7 @@ class Config:
 
 
 class ProductionConfig(Config):
-    DEBUG = False
+    DEBUG = True
     SERVER_PORT = os.environ.get('PORT', 5000)
 
 

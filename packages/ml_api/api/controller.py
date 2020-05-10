@@ -30,25 +30,28 @@ def version():
 def predict():
     if request.method == 'POST':
         # Step 1: Extract POST data from request body as JSON
+        print('abc')
         json_data = request.get_json()
         _logger.debug(f'Inputs: {json_data}')
 
         # Step 2: Validate the input using marshmallow schema
-        validated_data, errors = validate_inputs(input_data=json_data)
-        if validated_data:
-            val_dict = validated_data[0]
-            tot_dict = json.loads(json_data)[0]
-            val_list = list(val_dict.keys())
-            tot_list = list(tot_dict.keys())
-            rem_flds = [x for x in tot_list if x not in val_list]
-            for i in rem_flds:
-                val_dict[i] = tot_dict[i]
-            input_data = pd.DataFrame.from_dict(val_dict, orient='index')
-        else:
-            input_data = json.loads(json_data)
-            input_data = pd.json_normalize(input_data)
-            input_data = pd.DataFrame(input_data)    
-        
+        # validated_data, errors = validate_inputs(input_data=json_data)
+        # if validated_data:
+        #     val_dict = validated_data[0]
+        #     tot_dict = json.loads(json_data)[0]
+        #     val_list = list(val_dict.keys())
+        #     tot_list = list(tot_dict.keys())
+        #     rem_flds = [x for x in tot_list if x not in val_list]
+        #     for i in rem_flds:
+        #         val_dict[i] = tot_dict[i]
+        #     input_data = pd.DataFrame.from_dict(val_dict, orient='index')
+        # else:
+        #     # input_data = json.loads(json_data)
+        #     input_data = pd.json_normalize(input_data)
+        #     input_data = pd.DataFrame(input_data)    
+       
+        input_data = pd.json_normalize(json_data)
+        input_data = pd.DataFrame(input_data)
         # Step 3: Model prediction
         result = make_prediction(input_data=input_data)
         _logger.debug(f'Outputs: {result}')
@@ -60,4 +63,4 @@ def predict():
         # Step 5: Return the response as JSON
         return jsonify({'predictions': predictions,
                         'version': version,
-                        'errors': errors})
+                        'errors': 'errors'})

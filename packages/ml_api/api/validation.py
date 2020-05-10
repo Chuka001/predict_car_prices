@@ -64,7 +64,7 @@ def validate_inputs(input_data):
 
     # set many=True to allow passing in a list
     schema = CarsDataRequestSchema(many=True)
-    input_data = json.loads(input_data)
+    # input_data = json.loads(input_data)
 
     errors = None
     try:
@@ -78,5 +78,7 @@ def validate_inputs(input_data):
             validated_input=input_data)
     else:
         validated_input = input_data
+    
+    print(validated_input)
 
     return validated_input, errors
