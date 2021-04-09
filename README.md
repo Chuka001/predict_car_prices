@@ -2,6 +2,9 @@ This is an automated service that constantly updates the prediction model with h
 
 #API DOCUMENTATION
 
+URL
+https://car-price-prediction-service.herokuapp.com
+
 Endpoints
 
 GET '/version'
